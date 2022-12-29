@@ -1,0 +1,12 @@
+body {
+    margin: 10px;
+}
+#mainForm p {
+    font-size: 14px;
+    color: gray;
+    margin: 0;
+    margin-bottom: 3px;
+}
+#mainForm div {
+    margin-top: 10px;
+}
