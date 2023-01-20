@@ -1,12 +1,79 @@
 body {
-    margin: 10px;
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue", Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #F5F5F5;
 }
-#mainForm p {
-    font-size: 14px;
-    color: gray;
+/* top bar */
+.topBar {
+    position: fixed;
+    background-color: #6f42c1;
+    color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-bottom: 0.5px solid darkgray;
+}
+.topBar h2 {
+    font-weight: 500;
+    margin-left: 20px;
+}
+/* main form */
+.mainForm {
+    background-color: #fff;
+    position: absolute;
+    top: 70px;
+    padding: 50px;
+    border-radius: 5px;
+    border: 0.5px solid darkgray;
+    margin-top: 20px;
+    left: 20%;
+    right: 20%;
+}
+.mainForm p {
     margin: 0;
-    margin-bottom: 3px;
+    color: gray;
 }
-#mainForm div {
-    margin-top: 10px;
+.mainForm input[type=text] {
+    background-color: transparent;
+    border: 0.5px solid lightgray;
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px; 
+    margin-top: 5px;
+    transition: all 0.2s;
+}
+.mainForm input[type=text]:hover {
+    border: 0.5px solid gray;
+    transition: all 0.2s;
+}
+.mainForm input[type=text]:focus {
+    border: 0.5px solid darkgray;
+    transition: all 0.2s;
+}
+.mainForm input[type=submit] {
+    background-color: #198754;
+    color: white;
+    border: 0;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.mainForm input[type=submit]:hover {
+    background-color: #23915e;
+    transition: all 0.2s;
+}
+.mainForm input[type=submit]:active {
+    background-color: #2d9b68;
+    transition: all 0.2s;
+}
+.mainForm input[type=submit]:disabled {
+    background-color: #dc3545;
+    transition: all 0.2s;
 }
