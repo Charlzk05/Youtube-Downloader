@@ -91,6 +91,7 @@ body {
 }
 .mainForm input[type=submit]:disabled {
     background-color: #dc3545;
+    cursor: default;
     transition: all 0.2s;
 }
 .mainForm .about {
