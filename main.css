@@ -36,7 +36,7 @@ body {
 .mainForm {
     background-color: #fff;
     position: absolute;
-    top: 70px;
+    top: 100px;
     padding: 50px;
     border-radius: 5px;
     border: 0.5px solid darkgray;
@@ -44,6 +44,7 @@ body {
     left: 20%;
     right: 20%;
     overflow: hidden;
+    box-shadow: 0px 0px 40px 10px #fff;
 }
 .mainForm p {
     margin: 0;
