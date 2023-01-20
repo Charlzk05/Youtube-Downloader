@@ -1,7 +1,20 @@
 /* body */
 body {
     font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue", Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    background-color: #F5F5F5;
+    background-color: #222;
+}
+/* background image */
+.backgroundImage {
+    background: linear-gradient(rgba(25, 25, 25, 0.5), rgba(25, 25, 25, 0.5)), url("resources/Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+    z-index: -5;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 /* top bar */
 .topBar {
@@ -12,7 +25,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1;
-    border-bottom: 0.5px solid darkgray;
+    border-bottom: 0.5px solid #794dcb;
     overflow: hidden;
 }
 .topBar h2 {
@@ -31,19 +44,6 @@ body {
     left: 20%;
     right: 20%;
     overflow: hidden;
-}
-.mainForm .progressBar {
-    background-color: darkgray;
-    overflow: hidden;
-    margin-top: 10px;
-    height: 5px;
-    border-radius: 5px;
-}
-.mainForm .progressBar .innerBar {
-    background-color: #6f42c1;
-    width: 0%;
-    height: 5px;
-    border-radius: 5px;
 }
 .mainForm p {
     margin: 0;
