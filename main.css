@@ -5,7 +5,7 @@ body {
 }
 /* background image */
 .backgroundImage {
-    background: linear-gradient(rgba(25, 25, 25, 0.5), rgba(25, 25, 25, 0.5)), url("resources/Background.jpg");
+    background-image: url("resources/Background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     filter: blur(5px);
@@ -39,7 +39,6 @@ body {
     top: 100px;
     padding: 50px;
     border-radius: 5px;
-    border: 0.5px solid darkgray;
     margin-top: 20px;
     left: 20%;
     right: 20%;
@@ -72,11 +71,10 @@ body {
     background-color: #198754;
     color: white;
     border: 0;
-    font-size: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
     border-radius: 5px;
     margin-top: 5px;
     cursor: pointer;
