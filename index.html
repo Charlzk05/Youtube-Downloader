@@ -15,12 +15,12 @@
     <div class="mainForm">
         <p>Youtube URL</p>
         <form action="https://youtube-downloader-server.charlzk.repl.co/download_mp3" method="post" enctype="application/x-www-form-urlencoded">
-            <input name="url" type="text" placeholder="Must include https://youtu.be/ or https://youtube.com/watch?v=" oninput="mp3CheckBox_oninput(this)">
+            <input name="url" type="text" placeholder="URL" oninput="mp3CheckBox_oninput(this)">
             <input type="submit" value="Download Mp3" id="mp3_button" disabled>
         </form>
         <p style="margin-top: 10px;">Youtube URL</p>
         <form action="https://youtube-downloader-server.charlzk.repl.co/download_mp4" method="post" enctype="application/x-www-form-urlencoded">
-            <input name="url" type="text" placeholder="Must include https://youtu.be/ or https://youtube.com/watch?v=" oninput="mp4CheckBox_oninput(this)">
+            <input name="url" type="text" placeholder="URL" oninput="mp4CheckBox_oninput(this)">
             <input type="submit" value="Download Mp4" id="mp4_button" disabled>
         </form>
         <div class="about">
