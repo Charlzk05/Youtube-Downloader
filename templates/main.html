@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Charlzk05 - Youtube Downloader</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='{{ url_for("static", filename="main.css") }}'>
+    <link rel="icon" type="image/x-icon" href='{{ url_for("static", filename="resources/github-logo.png") }}'>
+</head>
+<body>
+    <div class="topBar">
+        <h4>Charlzk05 Youtube Downloader</h4>
+    </div>
+    <div class="mainForm">
+        <p>Youtube URL</p>
+        <form action="/download_mp3" method="post" enctype="application/x-www-form-urlencoded">
+            <input name="url" type="text" placeholder="URL" oninput="mp3CheckBox_oninput(this)">
+            <input type="submit" value="Download Mp3" id="mp3_button" disabled>
+        </form>
+        <p style="margin-top: 10px;">Youtube URL</p>
+        <form action="/download_mp4" method="post" enctype="application/x-www-form-urlencoded">
+            <input name="url" type="text" placeholder="URL" oninput="mp4CheckBox_oninput(this)">
+            <input type="submit" value="Download Mp4" id="mp4_button" disabled>
+        </form>
+        <div class="about">
+            <h3>Charlzk05 YouTube Downloader</h3>
+            <p class="paragraph">Youtube is the largest video sharing platform on the Internet. Millions of new videos are added every day. YouTube has a huge selection of videos, but it does not provide a download facility for them.</p>
+            <p class="paragraph">Your favorite YouTube videos can be efficiently downloaded as MP3 (audio) or MP4 (video) files with My Private Youtube Downloader. Our Web-App may be used on any platform because it has been designed to function on desktop, tablet, and mobile devices. Additionally, no additional apps or software is required.</p>
+        </div>
+    </div>
+    <div class="backgroundImage">
+        
+    </div>
+
+    <script src='{{ url_for("static", filename="main.js") }}'></script>
+</body>
+</html>
